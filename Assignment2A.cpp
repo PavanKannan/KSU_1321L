@@ -34,8 +34,5 @@ int main() {
             << 4 * CylinderRadius + 2 * CylinderHeight;
 
   double CylinderTSA = (2*3.14*CylinderRadius)*(CylinderRadius+CylinderHeight);
-  double CylinderCSA = 2*3.14*CylinderRadius*CylinderHeight;
-  std::cout <<"\nCylinder Total Surface Area: " << CylinderTSA;
-  std::cout <<"\nCylinder Curved Surface Area: " << CylinderCSA;
-  
+  std::cout <<"\nCylinder Total Surface Area: " << CylinderTSA;  
 }
