@@ -2,7 +2,7 @@
 Class: CSE 1321L
 Section: E03
 Term: Fall2023
-Instructor: Illa
+Instructor: Illa Jahanshahi
 Name: Pavan Kannan
 Lab#: 3A
 */
