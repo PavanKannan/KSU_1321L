@@ -8,6 +8,7 @@ Lab#: 3A
 */
 
 #include <iostream>
+#include <cmath>
 
 int main() {
 
@@ -20,6 +21,6 @@ int main() {
   std::cin >> APR;
   APRPerc = APR / 100;
 
-  std::cout << "\n\nYour Monthly Percentage Rate: " << APR / 12;
-  std::cout << "\nYour Minimum Payment: " << CurrentBal * APRPerc / 12;
+  std::cout << "\n\nYour Monthly Percentage Rate: " << round((APR / 12)*1000)/1000;
+  std::cout << "\nYour Minimum Payment: " << round((CurrentBal * APRPerc / 12)*100)/100;
 }
