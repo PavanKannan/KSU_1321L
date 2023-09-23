@@ -19,20 +19,30 @@ int main() {
   int UsrInp;
   std::cin >> UsrInp;
 
+  bool WhileLoop;
   int GuessCount;
   int i = 0;
 
-  while (UsrInp < 1001) {
+  if (UsrInp < 1001) {
+    WhileLoop = true;
+  }
+
+  while (WhileLoop == true) {
+
     while (GuessCount != UsrInp) {
       i++;
       srand((unsigned)time(0));
       GuessCount = (rand() % 1001);
       std::cout << "\nMy guess is " << GuessCount << endl;
+    } // Guesscount
 
-    } // while guesscount
-
-    std::cout << "\n\nI guessed " << UsrInp << " and it only took me " << i
-              << " guesses.";
-  } // while 1001
-
+    if (GuessCount == UsrInp) {
+      WhileLoop = false;
+    } // If statement
+  }   // WHILE 1001
+  std::cout << "\n\nI guessed " << UsrInp << " and it only took me " << i
+            << " guesses.";
 } // End
+
+
+
